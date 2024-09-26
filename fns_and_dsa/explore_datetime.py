@@ -13,7 +13,7 @@ def calculate_future_date(number_of_days):
 def main():
     print(f'Current date and time: {display_current_datetime()}')
 
-    number_of_days = int(input('Enter the number of days to calculate future date: '))
+    number_of_days = int(input('Enter the number of days to add to the current date: '))
     print(f'Future date: {calculate_future_date(number_of_days)}')
 
 main()
