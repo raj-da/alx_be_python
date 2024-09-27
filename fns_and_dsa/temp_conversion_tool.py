@@ -2,16 +2,10 @@ FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_celsius(fahrenheit):
-    global FAHRENHEIT_TO_CELSIUS_FACTOR
-
-    celsius = FAHRENHEIT_TO_CELSIUS_FACTOR * (fahrenheit - 32)
-    return celsius
-
+    return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR 
+    
 def convert_to_fahrenheit(celsius):
-    global CELSIUS_TO_FAHRENHEIT_FACTOR
-
-    fahrenheit = (CELSIUS_TO_FAHRENHEIT_FACTOR * celsius) + 32
-    return fahrenheit
+    return (CELSIUS_TO_FAHRENHEIT_FACTOR * celsius) + 32
 
 def main():
     try:
