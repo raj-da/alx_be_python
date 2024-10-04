@@ -19,7 +19,7 @@ class Book:
 
 class Library:
     def __init__(self):
-        self._books = list()
+        self._books = []
 
     def add_book(self, book):
         self._books.append(book)
